@@ -27,7 +27,9 @@ mvn clean package
 ## ▶️ How to Run
 Use the following command, specifying paths to the JSON input files:
 ```bash
-java -cp target/classes org.example.main.Main target/classes/orders.json target/classes/paymentmethods.json
+cd ~/"path"/Michal_Turek_Java_Wroclaw
+mvn clean package
+java -jar target/app.jar target/classes/orders.json target/classes/paymentmethods.json
 ```
 
 This will print to standard output the total amounts paid using each method.
